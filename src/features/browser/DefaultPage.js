@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import Iframe from 'react-iframe';
 import * as actions from './redux/actions';
 
 export class DefaultPage extends Component {
@@ -13,7 +14,12 @@ export class DefaultPage extends Component {
   render() {
     return (
       <div className="browser-default-page">
-        Page Content: browser/DefaultPage
+        <Iframe
+          url="/assets/code.html"
+          display="initial"
+          position="relative"
+          className="bgIframe"
+        />
       </div>
     );
   }

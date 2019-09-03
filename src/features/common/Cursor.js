@@ -61,8 +61,8 @@ export default class Cursor extends Component {
 
   render() {
     return (
-      <div id="cursor" className="cursor-item">
-
+      <div className="cursor">
+        <div id="cursor" className="cursor-item"></div>
       </div>
     );
   }

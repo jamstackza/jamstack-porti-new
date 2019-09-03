@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Iframe from 'react-iframe';
 
 export default class LayoutUiDesktop extends Component {
   static propTypes = {
@@ -8,7 +9,13 @@ export default class LayoutUiDesktop extends Component {
   render() {
     return (
       <div className="home-layout-ui-desktop">
-        Component content: home/LayoutUiDesktop
+
+        <Iframe
+          url="/assets/animations/particles/index.html"
+          display="initial"
+          position="relative"
+          className="bgIframe"
+        />
       </div>
     );
   }
